@@ -1,0 +1,16 @@
+{
+  "projects": [
+    {
+      "Title ": "Store Stock Manager",
+      "Description ": "Store Stock Manager is a inventory management system developed using C language.This includes managing the product in an appropriate way to review any time as per the requirement. It maintains the balance of the stock, details about the purchase and sales in the market.",
+      "Features ": [
+        "SSM checks and keeps the record of level of stock available in store and let the user know when to order new stock. ",
+        " SSM keeps the record of purchased date and cost price of each item.",
+        "SSM keeps the record of selling price and sales date of each item.",
+        "SSM keeps the record of manufactured date to make sure that no expired items are stored in the store.",
+        " SSM can make order list and purchase/order the goods in the store according to the order list"
+      ],
+      "Used Technology": "C Language"
+    }
+  ]
+}

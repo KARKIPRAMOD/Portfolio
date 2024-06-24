@@ -1,0 +1,35 @@
+.para {
+  width: 300px;
+  margin-top: 0;
+}
+
+.video_preview {
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  /* margin: 15px; */
+}
+
+.video_description {
+  display: inline-block;
+  width: 200px;
+}
+
+.channel_picture {
+  display: inline-block;
+  width: 50px;
+  vertical-align: top;
+}
+
+.profile_picture {
+  width: 40px;
+  border-radius: 50px;
+}
+
+.thumbnail-row {
+  margin-bottom: 12px;
+}
+
+.thumbnail {
+  width: 300px;
+}

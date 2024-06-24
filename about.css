@@ -1,0 +1,159 @@
+/* Base styles */
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: auto;
+}
+
+.intro {
+  padding: 15px;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: tomato;
+}
+
+.introduction p {
+  color: white;
+}
+
+.education {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.edu {
+  text-align: center;
+  font-size: 2em;
+  padding: 15px;
+  margin-bottom: 20px;
+  text-decoration: underline rgb(255, 255, 255);
+}
+
+.school,
+.highschool,
+.bachelors {
+  flex: 1 1 calc(33.333% - 40px); /* Adjust for margin */
+  max-width: 100%; /* Allow them to shrink */
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s;
+  border: solid red;
+}
+
+.school:hover,
+.highschool:hover,
+.bachelors:hover {
+  transform: translateY(-10px);
+}
+
+.school h3,
+.highschool h3,
+.bachelors h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #ff6347;
+}
+
+.location {
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  margin-top: 10px;
+  border: solid white;
+  border-radius: 5px;
+}
+
+.location a {
+  color: #1e90ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.location:hover a {
+  text-decoration: underline;
+}
+
+.map-address {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
+.popup .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  display: none;
+}
+
+.popup .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: yellow;
+  width: 90%;
+  max-width: 450px;
+  height: 200px;
+  z-index: 2;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.border-gradient {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+}
+
+.purple {
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
+
+@media (max-width: 768px) {
+  .school,
+  .highschool,
+  .bachelors {
+    flex: 1 1 calc(50% - 40px);
+  }
+
+  .intro {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .school,
+  .highschool,
+  .bachelors {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .intro {
+    font-size: 1.2em;
+  }
+
+  .popup .content {
+    width: 90%;
+  }
+}

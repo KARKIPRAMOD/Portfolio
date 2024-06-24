@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="sidebar.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="slider.css" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <img
+        class="side-menu"
+        width="30px"
+        height="30px"
+        src="icons/menu.png"
+        alt=""
+        onclick="showsidebar()"
+      />
+      <div class="sidebar">
+        <img
+          class="side-menu-close"
+          src="icons/close.png"
+          alt=""
+          onclick="hidesidebar()"
+        />
+        <ul class="side-bar">
+          <li><label onclick="scrollToSection('home-page')">HOME</label></li>
+          <li><label onclick="scrollToSection('about')">ABOUT</label></li>
+          <li><label onclick="scrollToSection('projects')">PROJECTS</label></li>
+          <li><label>CONTACT</label></li>
+        </ul>
+      </div>
+      <div class="main-content">
+        <div id="home-page" class="home-page">
+          <p class="hi">Hi I am,</p>
+          <p class="name-english">PRAMOD KARKI</p>
+          <p class="name-nepali">प्रमोद कार्की</p>
+          <img
+            class="profile-pic"
+            src="thumbnails/260163545_353186716570685_1256860944804926050_n.jpg"
+            alt=""
+          />
+          <div class="ring"></div>
+          <div class="moon moon1">
+            <a href="https://facebook.com">
+              <img src="icons/messenger.png" alt="Facebook" />
+            </a>
+          </div>
+          <div class="moon moon2">
+            <a href="https://linkedin.com">
+              <img src="icons/linkedin.png" alt="Twitter" />
+            </a>
+          </div>
+          <div class="moon moon3">
+            <a href="https://instagram.com">
+              <img src="icons/instagram.png" alt="LinkedIn" />
+            </a>
+          </div>
+          <div class="moon moon4">
+            <a href="https://discord.com">
+              <img src="icons/discord.png" alt="LinkedIn" />
+            </a>
+          </div>
+          <div class="moon moon5">
+            <a href="https://github.com">
+              <img src="icons/github.png" alt="LinkedIn" />
+            </a>
+          </div>
+        </div>
+        <div id="about" class="about">
+          <label class="intro border-gradient purple">ABOUT ME</label>
+          <div class="introduction">
+            <p>
+              Hi, I'm Pramod Karki, a 22-year-old student currently pursuing a
+              Bachelor of Information Technology (BIT) at Kantipur City College
+              in Kathmandu, affiliated with Purbanchal University. My academic
+              journey has been focused on gaining practical skills . I have a
+              strong interest in exploring how technology can streamline
+              processes and improve efficiency in various sectors.
+            </p>
+
+            <p>
+              Outside of academics, I enjoy staying updated with the latest
+              developments in the tech industry and participating in coding
+              competitions. Through internships and projects, This has deepened
+              my understanding and sparked my curiosity to further explore the
+              intersection of technology and business.
+            </p>
+
+            <p>
+              You'll discover more about my journey and achievements in the
+              information I've added to my portfolio. I'm excited about the
+              opportunities ahead to apply my skills and contribute meaningfully
+              to the field of Information Technology.
+            </p>
+          </div>
+          <label class="edu">EDUCATION</label>
+          <div class="education">
+            <div class="school">
+              <h3>SCHOOL<br />RELIANCE</h3>
+              <div class="location">
+                <iframe
+                  class="map-address"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.997505332841!2d85.35186651099345!3d27.73000317607018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb195ffd7b1a3d%3A0x95522ef6fb71e3c4!2sReliance%20International%20Academy!5e1!3m2!1sen!2snp!4v1718999053655!5m2!1sen!2snp"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <a href="https://maps.app.goo.gl/VjKJWA7owa4sAhye9"
+                ><p>location</p></a
+              >
+              <div class="duration"><p>(2063-2074)</p></div>
+              <div class="course"><p>PG to Grade 10</p></div>
+              <div class="marks"><p>SEE : 3.60 (A)</p></div>
+              <div class="course-detail" id="popup-1">
+                <!-- <div class="overlay"></div>
+                  <div class="content">
+                    <button onclick="togglepopup">course</button>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Aut quo reprehenderit iusto veniam voluptatum perferendis,
+                      eos nesciunt dicta eius, cum blanditiis corporis aperiam
+                      totam nisi eligendi quibusdam itaque inventore natus!
+                    </p>
+                  </div> -->
+              </div>
+            </div>
+            <div class="highschool">
+              <h3>
+                HIGHSCHOOL<br />
+                XAVIER
+              </h3>
+              <div class="location">
+                <iframe
+                  class="map-address"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.1037043937426!2d85.33463721099284!3d27.714084176079346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1973a6729c41%3A0x72a591f5f27acf9!2sXavier%20International%20College!5e0!3m2!1sen!2snp!4v1718996145369!5m2!1sen!2snp"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <a href="https://maps.app.goo.gl/sPJcpAJ8bt14Q4748">
+                <p>location</p></a
+              >
+              <div class="duration"><p>(2074-2076)</p></div>
+              <div class="course"><p>+2 (Science)</p></div>
+              <div class="marks">
+                <p>Grade 11 : 3.27</p>
+                <p>Grade 12 : 3.24</p>
+              </div>
+            </div>
+            <div class="bachelors">
+              <h3>
+                COLLEGE<br />
+                KANTIPUR CITY COLLEGE
+              </h3>
+              <div class="location">
+                <iframe
+                  class="map-address"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1766.2221723829382!2d85.32329660286449!3d27.703563761482673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19a86d92de5f%3A0xd6a23381c4e35c7e!2sKantipur%20City%20College!5e0!3m2!1sen!2snp!4v1718996253250!5m2!1sen!2snp"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <a href="https://maps.app.goo.gl/pC2qUo4RVYsbLM2g8"
+                ><p>location</p></a
+              >
+              <div class="duration"><p>(2077-Present)</p></div>
+              <div class="course"><p>BACHELORS (BIT)</p></div>
+            </div>
+          </div>
+        </div>
+        <div id="projects" class="projects">
+          <label class="intro border-gradient purple">PROJECT</label>
+
+          <div
+            class="slider"
+            style="--width: 300px; --height: 400px; --quantity: 7"
+          >
+            <div class="list">
+              <div class="items" style="--position: 2">
+                <p class="title">STORE STOCK MANAGER</p>
+                <p>Description :</p>
+                <p>
+                  Store Stock Manager is a inventory management system developed
+                  using C language.
+                </p>
+                <button onclick="togglepopup(`popup2`)">VIEW</button>
+                <div id="popup2" class="popup">
+                  <div class="overlay"></div>
+                  <div class="content">
+                    <div class="close-btn" onclick="togglepopup(`popup2`)">
+                      &times;
+                    </div>
+                    <h1>About</h1>
+                    <p>
+                      Store Stock Manager is a inventory management system
+                      developed using C language.This includes managing the
+                      product in an appropriate way to review any time as per
+                      the requirement. It maintains the balance of the stock,
+                      details about the purchase and sales in the market.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="items" style="--position: 3">
+                <p class="title">CPP ROUGE</p>
+                <p>Description :</p>
+                <p>CPP Rouge is a captivating RPG crafted in C++ with SFML</p>
+                <button onclick="togglepopup(`popup3`)">VIEW</button>
+                <div id="popup3" class="popup">
+                  <div class="overlay"></div>
+                  <div class="content">
+                    <div class="close-btn" onclick="togglepopup(`popup3`)">
+                      &times;
+                    </div>
+                    <h1>About</h1>
+                    <p>
+                      CPP Rouge is a captivating RPG crafted in C++ with SFML
+                      for stunning graphics, audio, and user interaction. Its
+                      versatile game engine enables effortless customization to
+                      fit unique preferences and ideas, setting it apart as an
+                      extraordinary gaming experience
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="items" style="--position: 4">
+                <p class="title">8051 PULSE RATE MONITOR</p>
+                <p>Description :</p>
+                <p>
+                  About HeartBeat counter developed using Microcontroller 8051.
+                </p>
+                <button onclick="togglepopup(`popup4`)">VIEW</button>
+                <div id="popup4" class="popup">
+                  <div class="overlay"></div>
+                  <div class="content">
+                    <div class="close-btn" onclick="togglepopup(`popup4`)">
+                      &times;
+                    </div>
+                    <h1>About</h1>
+                    <p>
+                      HeartBeat counter developed using Microcontroller 8051,
+                      combining assembly and C language. Accurately measures
+                      pulse rate, converts analog to digital using ADC0804, and
+                      displays results on an LCD screen.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="items" style="--position: 5">
+                <p class="title">CAMPUSFLOW</p>
+                <p>Description :</p>
+                <p>Streamlining education management.</p>
+                <button onclick="togglepopup(`popup5`)">VIEW</button>
+                <div id="popup5" class="popup">
+                  <div class="overlay"></div>
+                  <div class="content">
+                    <div class="close-btn" onclick="togglepopup(`popup5`)">
+                      &times;
+                    </div>
+                    <h1>About</h1>
+                    <p>
+                      CampusFlow: Streamlining education management. Automates
+                      admin tasks, tracks grades, attendance, activities.
+                      Empowers schools with efficient data handling
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="items" style="--position: 6">
+                <p class="title">VidyaVriddhi</p>
+                <p>Description :</p>
+                <p>
+                  VidyaVriddhi is an educational platform designed to foster
+                  knowledge exchange and learning.
+                </p>
+                <button onclick="togglepopup(`popup6`)">VIEW</button>
+                <div id="popup6" class="popup">
+                  <div class="overlay"></div>
+                  <div class="content">
+                    <div class="close-btn" onclick="togglepopup(`popup6`)">
+                      &times;
+                    </div>
+                    <h1>About</h1>
+                    <p>
+                      VidyaVriddhi is an educational platform designed to foster
+                      knowledge exchange and learning. It provides a space for
+                      individuals who are experts in their fields to share their
+                      expertise with learners seeking quality educational
+                      content. Unlike traditional educational platforms,
+                      VidyaVriddhi doesn't require its contributors to be
+                      certified teachers;
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="items" style="--position: 7">
+                <p class="title">OpenCV</p>
+                <p>Description :</p>
+                <p>
+                  Opencv project to use hand gestures to trigger arrow keys and
+                  volume controls
+                </p>
+                <button onclick="togglepopup(`popup7`)">VIEW</button>
+                <div id="popup7" class="popup">
+                  <div class="overlay"></div>
+                  <div class="content">
+                    <div class="close-btn" onclick="togglepopup(`popup7`)">
+                      &times;
+                    </div>
+                    <h1>About</h1>
+                    <p>
+                      Opencv project to use hand gestures to trigger arrow keys
+                      and volume controls.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="items" style="--position: 8">
+                <p class="title">Calculator</p>
+                <p>Description :</p>
+                <p>The calculator application, developed in C#</p>
+                <button onclick="togglepopup(`popup8`)">VIEW</button>
+                <div id="popup8" class="popup">
+                  <div class="overlay"></div>
+                  <div class="content">
+                    <div class="close-btn" onclick="togglepopup(`popup8`)">
+                      &times;
+                    </div>
+                    <h1>About</h1>
+                    <p>
+                      The calculator application, developed in C#, offers two
+                      distinct operational modes: Normal and Scientific.
+                      Additionally, users can choose between two aesthetic
+                      themes: Dark and Standard.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function hidesidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        const mainContent = document.querySelector(".main-content");
+        sidebar.style.display = "none";
+        const menu = document.querySelector(".side-menu");
+        menu.style.display = "flex";
+        mainContent.classList.remove("with-sidebar");
+      }
+
+      function showsidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        const mainContent = document.querySelector(".main-content");
+        sidebar.style.display = "flex";
+        const menu = document.querySelector(".side-menu");
+        menu.style.display = "none";
+        mainContent.classList.add("with-sidebar");
+      }
+      function scrollToSection(sectionID) {
+        const section = document.getElementById(sectionID);
+        if (section) {
+          section.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }
+      }
+      function togglepopup(id) {
+        document.getElementById(id).classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
