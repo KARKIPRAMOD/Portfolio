@@ -179,7 +179,6 @@ p {
   transform: scale(1.2) !important;
 }
 
-/* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
   .profile-pic {
     width: 400px;
